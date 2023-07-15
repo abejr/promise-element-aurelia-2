@@ -1,0 +1,14 @@
+<div>
+    <h1>List</h1>
+    <template promise.bind="promiseFunction()">
+        <template pending>
+            <span>loading</span>
+        </template>
+        <template then.bind="data">
+
+            <au-slot name="test">
+            </au-slot>
+        </template>
+    </template>
+
+</div>
